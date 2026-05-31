@@ -6,8 +6,7 @@
 
             System.out.println("Rectangle area: " + r.getArea()); // 20
             System.out.println("Square area: " + s.getArea());     // 16
-
-            // Дополнительная демонстрация: одна и та же функция работает с любым Shape
+            
             printArea(new Rectangle(6, 3));
             printArea(new Square(5));
         }
