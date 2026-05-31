@@ -1,7 +1,7 @@
 public class IntegerCacheExample {
     public static void main(String[] args) {
         
-        System.out.println("===== ДЛЯ 128 (ВНЕ ДИАПАЗОНА КЕША) =====");
+        System.out.println("ДЛЯ 128");
         int i1 = 128;
         Integer a1 = i1;  // boxing - создается НОВЫЙ объект
         Integer b1 = i1;  // boxing - создается ЕЩЕ ОДИН НОВЫЙ объект
@@ -12,7 +12,7 @@ public class IntegerCacheExample {
         System.out.println("b1.equals(i1) -> " + b1.equals(i1));  // true
         System.out.println("a1.equals(b1) -> " + a1.equals(b1));  // true
         
-        System.out.println("\n===== ДЛЯ 127 (В ДИАПАЗОНЕ КЕША) =====");
+        System.out.println("\nДЛЯ 127 ");
         int i2 = 127;
         Integer a2 = i2;  // boxing - берется из кеша
         Integer b2 = i2;  // boxing - берется ТОТ ЖЕ объект из кеша
