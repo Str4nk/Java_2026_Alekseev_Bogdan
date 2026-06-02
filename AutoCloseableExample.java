@@ -54,5 +54,6 @@ public class AutoCloseableExample {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //Зачем нужен: Позволяет автоматически закрывать ресурсы (файлы, сетевые соединения, БД) с помощью конструкции try-with-resources.
     }
 }
