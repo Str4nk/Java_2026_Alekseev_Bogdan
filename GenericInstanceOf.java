@@ -10,11 +10,11 @@ public class GenericInstanceOf {
         Wrapper<String> stringWrapper = new Wrapper<>("Hello");
         Wrapper<Integer> integerWrapper = new Wrapper<>(100);
         
-        // ✅ instanceof работает с "сырым" типом (raw type)
+        // instanceof работает с "сырым" типом (raw type)
         System.out.println("stringWrapper instanceof Wrapper: " + (stringWrapper instanceof Wrapper));
         System.out.println("integerWrapper instanceof Wrapper: " + (integerWrapper instanceof Wrapper));
         
-        // ❌ НЕЛЬЗЯ проверить конкретный параметризованный тип
+        // НЕЛЬЗЯ проверить конкретный параметризованный тип
         // System.out.println(stringWrapper instanceof Wrapper<String>);  // Ошибка компиляции!
         
         // Пример 2: Проверка с использованием wildcard
