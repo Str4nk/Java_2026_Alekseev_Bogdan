@@ -46,9 +46,9 @@ public class OuterClass {
         outer.testAccess();
         
         // Создание объектов внутренних классов извне
-        PublicInner pi = outer.new PublicInner();  // ✅ public - доступно
-        // PrivateInner pri = outer.new PrivateInner();  // ❌ private - недоступно
-        // ProtectedInner pro = outer.new ProtectedInner(); // ⚠️ только в том же пакете
-        // DefaultInner di = outer.new DefaultInner();     // ⚠️ только в том же пакете
+        PublicInner pi = outer.new PublicInner();  // public - доступно
+        // PrivateInner pri = outer.new PrivateInner();  // private - недоступно
+        // ProtectedInner pro = outer.new ProtectedInner(); // только в том же пакете
+        // DefaultInner di = outer.new DefaultInner();     // только в том же пакете
     }
 }
