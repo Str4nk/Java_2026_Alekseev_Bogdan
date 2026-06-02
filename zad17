@@ -1,0 +1,5 @@
+Практика #3: Зачем нужны Reader и Writer?
+InputStream/OutputStream работают с байтами, а Reader/Writer работают с символами (Unicode).
+
+InputStream/OutputStream:	Работает с Байтами (byte.)	Назначение Бинарные файлы (изображения, аудио, видео)
+Reader/Writer: Работает с Символами (char, 16-bit).	Назначение Текстовые файлы с учетом кодировок
